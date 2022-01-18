@@ -1,0 +1,226 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --background-color: #e5e5e5;
+  --background-dark: #2f303a;
+  --backround-middle: #f5f4fa;
+  --white: #ffffff;
+  --light-grey: rgba(255, 255, 255, 0.6);
+}
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* Шапка */
+.page-header {
+  background-color: var(--white);
+}
+.logo {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.11;
+
+  color: var(--accent-color);
+}
+.logo span {
+  color: var(--title-text-color);
+}
+.link {
+  color: var(--title-text-color);
+}
+link:hover,
+link:focus {
+  color: var(--accent-color);
+}
+li {
+  list-style-type: none;
+}
+
+.site-nav a {
+  color: var(--title-text-color);
+  text-decoration: none;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+
+  color: var(--title-text-color);
+}
+.site-nav :hover,
+.site-nav :focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.contact-info a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+.contact-info.contact-mail {
+  color: var(--accent-color);
+}
+
+/* Кнопка */
+
+.body-button-section {
+  background-color: #2f303a;
+  color: #ffffff;
+}
+.button-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.button {
+  background-color: var(--accent-color);
+  color: var(--white);
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 2;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* Преимущества */
+
+.features-title {
+  color: var(--title-text-color);
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.text {
+  color: var(--primary-text-color);
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Услуги */
+.section-title {
+  color: var(--title-text-color);
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+/* Команда */
+.hero {
+  background-color: var(--backround-middle);
+}
+.hero-title {
+  color: var(--title-text-color);
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+}
+.hero-name {
+  color: var(--title-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* Футер */
+.footer-body {
+  background-color: var(--background-dark);
+}
+.logo-footer {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+
+  color: var(--accent-color);
+}
+.logo-footer span {
+  color: var(--white);
+}
+
+.footer-contacts a {
+  color: var(--light-grey);
+  text-decoration: none;
+  font-family: inherit;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.footer-contacts .contact-adress {
+  color: var(--white);
+  font-size: 14px;
+  line-height: 1.7;
+}
+/* Портфолио */
+/* Фильтр */
+.portfolio-buttons {
+  cursor: pointer;
+  background-color: var(--backround-middle);
+}
+
+.button-portfolio {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.portfolio-buttons :hover,
+.portfolio-buttons :focus {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+/* Проекты */
+.projects-title {
+  color: #212121;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
