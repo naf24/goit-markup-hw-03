@@ -1,3 +1,4 @@
+
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -8,24 +9,41 @@
   --white: #ffffff;
   --light-grey: rgba(255, 255, 255, 0.6);
 }
+p, h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+ul, ol{
+  margin: 0;
+  padding: 0;
+}
+button{
+  cursor: pointer;
+}
+
 body {
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
 }
-.box {
-  width: ;
-  height: ;
-  background-color: ;
-  margin-left: auto;
-  margin-right: auto;
+.list{
+  list-style: none;
+}
+.link{
+  text-decoration: none;
 }
 
 /* Шапка */
 .page-header {
   background-color: var(--white);
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
-.container {
+.header-container{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
 }
 
 .logo {
@@ -86,7 +104,20 @@ li {
 .body-button-section {
   background-color: #2f303a;
   color: #ffffff;
+  text-align: center;
+  
 }
+.button-container {
+   width: 1200px;
+   padding-top: 200px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
 .button-title {
   font-weight: 900;
   font-size: 44px;
@@ -98,7 +129,10 @@ li {
 }
 .button {
   min-width: 200px;
-
+  margin: 0;
+  padding-bottom: 200px;
+  
+     
   border-radius: 4px;
   padding: 10px 32px;
   background-color: var(--accent-color);
@@ -118,8 +152,15 @@ li {
   border-radius: 4px;
 }
 
-/* Преимущества */
 
+/* Преимущества */
+.features-container{
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
 .features-title {
   color: var(--title-text-color);
 
@@ -137,6 +178,14 @@ li {
 }
 
 /* Услуги */
+.services-container{
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
 .section-title {
   color: var(--title-text-color);
 
@@ -146,6 +195,14 @@ li {
   text-align: center;
 }
 /* Команда */
+
+.hero-container{
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
 .hero {
   background-color: var(--backround-middle);
 }
@@ -166,6 +223,13 @@ li {
 }
 
 /* Футер */
+.footer-container{
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
 .footer-body {
   background-color: var(--background-dark);
 }
@@ -197,10 +261,30 @@ li {
 }
 /* Портфолио */
 /* Фильтр */
+.buttons-container{
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
 .portfolio-buttons {
   cursor: pointer;
   background-color: var(--backround-middle);
 }
+--link 
+  display: inline-block;
+  padding: 16px 32px;
+
+  border-radius: 3px;
+  background-color: teal;
+  color: white;
+
+  font-family: sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
 
 .button-portfolio {
   font-family: inherit;
@@ -214,6 +298,13 @@ li {
   color: var(--white);
 }
 /* Проекты */
+.projects-container{
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
 .projects-title {
   color: #212121;
 
