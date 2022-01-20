@@ -7,7 +7,6 @@
   --backround-middle: #f5f4fa;
   --white: #ffffff;
   --light-grey: rgba(255, 255, 255, 0.6);
-  --base-margin: 94px;
   --middle-margin: 30px;
 }
 p,
@@ -39,6 +38,10 @@ body {
 .link {
   text-decoration: none;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -53,7 +56,13 @@ body {
   padding-top: 24px;
   padding-bottom: 25px;
 }
-
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-connect {
+  margin-left: auto;
+}
 .logo {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -76,10 +85,14 @@ link:focus {
 li {
   list-style-type: none;
 }
-
+.site-nav {
+  display: flex;
+  align-items: center;
+}
 .site-nav a {
   color: var(--title-text-color);
   text-decoration: none;
+  margin-right: 50px;
 
   font-weight: 500;
   font-size: 14px;
@@ -102,6 +115,7 @@ li {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  margin-right: 50px;
 }
 .contact-info.contact-mail {
   color: var(--accent-color);
@@ -109,25 +123,7 @@ li {
 
 /* Кнопка */
 
-.body-button-section {
-  background-color: #2f303a;
-  color: #ffffff;
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin-bottom: var(--base-margin);
-}
-
-.button-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-.button {
+.btn {
   min-width: 200px;
   margin: 0;
   padding-bottom: 200px;
@@ -151,8 +147,23 @@ li {
   border-radius: 4px;
 }
 
-.section {
+.body-button-section {
+  background-color: #2f303a;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
   margin-bottom: var(--base-margin);
+}
+
+.button-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* Преимущества */
@@ -171,18 +182,22 @@ li {
 
   font-size: 14px;
   line-height: 1.7;
+  margin: 10px 30px;
+  width: 25%;
 }
 
 /* Услуги */
 
 .section-title {
   color: var(--title-text-color);
-  margin-bottom: var(--base-margin);
 
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+}
+.services-list li {
+  width: 33.3%;
 }
 /* Команда */
 
@@ -201,12 +216,16 @@ li {
 .hero-list {
   border: 1px solid #2196f3;
 }
+.hero-list li {
+  width: 25%;
+}
 .hero-name {
   color: var(--title-text-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  padding: 30px 60px 60px 60px;
 }
 
 /* Футер */
@@ -254,16 +273,40 @@ li {
 .portfolio-buttons {
   cursor: pointer;
   background-color: var(--backround-middle);
-  padding-bottom: 34px;
-  margin-bottom: var(--base-margin);
+
+  color: var(--white);
+
+  border: 1px solid transparent;
+
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 2;
+
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
-.button-portfolio {
+.btn-portfolio {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-bottom: var(--base-margin);
+  margin-right: 8px;
+
+  min-width: 70px;
+  margin: 0;
+
+  border-radius: 4px;
+  padding: 10px 32px;
+  background-color: var(--background-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
+
 .portfolio-buttons :hover,
 .portfolio-buttons :focus {
   background-color: var(--accent-color);
@@ -273,8 +316,11 @@ li {
 .projects {
   padding-bottom: 94px;
   border: 1px solid #2196f3;
+  margin-right: var(--middle-margin);
 }
-
+.projects li {
+  width: 33.3%;
+}
 .projects-title {
   color: #212121;
 
