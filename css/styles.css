@@ -1,4 +1,3 @@
-
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -8,15 +7,24 @@
   --backround-middle: #f5f4fa;
   --white: #ffffff;
   --light-grey: rgba(255, 255, 255, 0.6);
+  --base-margin: 94px;
+  --middle-margin: 30px;
 }
-p, h1, h2, h3, h4, h5, h6{
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
-ul, ol{
+ul,
+ol {
   margin: 0;
   padding: 0;
 }
-button{
+button {
   cursor: pointer;
 }
 
@@ -25,11 +33,18 @@ body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
 }
-.list{
+.list {
   list-style: none;
 }
-.link{
+.link {
   text-decoration: none;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
 }
 
 /* Шапка */
@@ -37,13 +52,6 @@ body {
   background-color: var(--white);
   padding-top: 24px;
   padding-bottom: 25px;
-}
-.header-container{
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  outline: 2px solid red;
 }
 
 .logo {
@@ -105,17 +113,9 @@ li {
   background-color: #2f303a;
   color: #ffffff;
   text-align: center;
-  
-}
-.button-container {
-   width: 1200px;
-   padding-top: 200px;
-  padding-right: 15px;
-  padding-bottom: 30px;
-  padding-left: 15px;
-  
-  margin: 0 auto;
-  outline: 2px solid red;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-bottom: var(--base-margin);
 }
 
 .button-title {
@@ -131,8 +131,7 @@ li {
   min-width: 200px;
   margin: 0;
   padding-bottom: 200px;
-  
-     
+
   border-radius: 4px;
   padding: 10px 32px;
   background-color: var(--accent-color);
@@ -152,15 +151,12 @@ li {
   border-radius: 4px;
 }
 
+.section {
+  margin-bottom: var(--base-margin);
+}
 
 /* Преимущества */
-.features-container{
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
-  outline: 2px solid red;
-}
+
 .features-title {
   color: var(--title-text-color);
 
@@ -178,16 +174,10 @@ li {
 }
 
 /* Услуги */
-.services-container{
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
-  outline: 2px solid red;
-}
 
 .section-title {
   color: var(--title-text-color);
+  margin-bottom: var(--base-margin);
 
   font-weight: bold;
   font-size: 36px;
@@ -196,15 +186,9 @@ li {
 }
 /* Команда */
 
-.hero-container{
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
-  outline: 2px solid red;
-}
 .hero {
   background-color: var(--backround-middle);
+  margin-bottom: var(--base-margin);
 }
 .hero-title {
   color: var(--title-text-color);
@@ -213,6 +197,9 @@ li {
   font-size: 36px;
   line-height: 1.67;
   text-align: center;
+}
+.hero-list {
+  border: 1px solid #2196f3;
 }
 .hero-name {
   color: var(--title-text-color);
@@ -223,15 +210,11 @@ li {
 }
 
 /* Футер */
-.footer-container{
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
-  outline: 2px solid red;
-}
+
 .footer-body {
   background-color: var(--background-dark);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
   text-decoration: none;
@@ -239,6 +222,7 @@ li {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
+  margin-bottom: 20px;
 
   color: var(--accent-color);
 }
@@ -253,38 +237,26 @@ li {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
+  margin-bottom: 9px;
 }
 .footer-contacts .contact-adress {
   color: var(--white);
   font-size: 14px;
   line-height: 1.7;
+  margin-bottom: 9px;
 }
 /* Портфолио */
-/* Фильтр */
-.buttons-container{
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
-  outline: 2px solid red;
+.second {
+  margin-bottom: var(--base-margin);
 }
+/* Фильтр */
+
 .portfolio-buttons {
   cursor: pointer;
   background-color: var(--backround-middle);
+  padding-bottom: 34px;
+  margin-bottom: var(--base-margin);
 }
---link 
-  display: inline-block;
-  padding: 16px 32px;
-
-  border-radius: 3px;
-  background-color: teal;
-  color: white;
-
-  font-family: sans-serif;
-  font-size: 14px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
 
 .button-portfolio {
   font-family: inherit;
@@ -298,13 +270,11 @@ li {
   color: var(--white);
 }
 /* Проекты */
-.projects-container{
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
-  outline: 2px solid red;
+.projects {
+  padding-bottom: 94px;
+  border: 1px solid #2196f3;
 }
+
 .projects-title {
   color: #212121;
 
