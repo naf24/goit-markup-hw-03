@@ -396,22 +396,30 @@ li {
   color: var(--white);
 }
 /* Проекты */
-.projects-portfolio {
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
   
 }
+.projects-item {
+  margin-left: 0;
+}
+.projects-item:not(:nth-child(3n)){
+margin-right: 30px;
+}
+
+.projects-item:not(:nth-last-child(-n + 3)){
+  margin-bottom: 30px;
+}
+
 .projects {
   padding-bottom: 94px;
   border-bottom: 1px solid #2196f3;
-  margin-right: var(--middle-margin);
+  
 }
-.projects-container {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-.projects li-wrap {
-  display: flex;
-}
+
+
 .projects-title {
   color: #212121;
 
