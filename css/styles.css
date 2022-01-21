@@ -113,6 +113,10 @@ li {
 .header-nav .link.current {
   color: var(--accent-color);
 }
+.contact-info {
+  display: flex;
+}
+
 .contact-info a {
   color: var(--primary-text-color);
   text-decoration: none;
@@ -173,6 +177,7 @@ li {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 /* Преимущества */
@@ -185,9 +190,20 @@ li {
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: left;
+}
+.features-section {
+  padding-bottom: 0;
 }
 .features-container {
   display: flex;
+}
+.features-container .li {
+  width: 270px;
+  box-align: left;
+  text-align: left;
+  margin-left: 0;
+  margin-right: 30px;
 }
 .text {
   color: var(--primary-text-color);
@@ -195,10 +211,11 @@ li {
   font-size: 14px;
   line-height: 1.7;
   margin: 10px 30px;
-  width: 25%;
 }
 
 /* Услуги */
+.section {
+}
 
 .section-title {
   color: var(--title-text-color);
@@ -219,9 +236,11 @@ li {
 }
 /* Команда */
 
-.hero {
+.hero-section {
   background-color: var(--backround-middle);
   margin-bottom: var(--base-margin);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .hero-title {
@@ -231,7 +250,7 @@ li {
   font-size: 36px;
   line-height: 1.67;
   text-align: center;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 .hero-container {
   display: flex;
@@ -243,6 +262,9 @@ li {
 
 .hero-item {
   margin-right: 30px;
+}
+.hero-text {
+  padding: 30px 30px 30px 30px;
 }
 .hero-name {
   color: var(--title-text-color);
@@ -269,6 +291,9 @@ li {
   margin-bottom: 20px;
 
   color: var(--accent-color);
+}
+.footer-logo {
+  margin-bottom: 20px;
 }
 .logo-footer span {
   color: var(--white);
