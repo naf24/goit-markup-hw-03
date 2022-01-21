@@ -403,7 +403,7 @@ li {
   
 }
 .projects-item {
-  margin-left: 0;
+  border-bottom: 1px solid var(--primary-text-color);
 }
 .projects-item:not(:nth-child(3n)){
 margin-right: 30px;
