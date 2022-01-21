@@ -16,43 +16,58 @@
     
       <body>
   
-<!-- Шапка -->
-    <header class="page-header second">
-      <div class="container">
-      <nav>
+    <!-- Шапка -->
+    <header class="page-header">
+      <div class="container header-container">
         <a href="" class="logo">Web<span>Studio</span></a>
-        <ul class="site-nav">
-          <li><a href="./index.html" class="link">Студия</a></li>
-          <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
-        </ul>
-      </nav>
-      <ul class="contact-info">
-        <li>
-          <a href="mailto:info@devstudio.com" class="contact-mail">info@devstudio.com</a>
-        </li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+        <nav class="header-nav">
+          <ul class="header-list list">
+            <li class="header-item">
+              <a href="./index.html" class="link">Студия</a>
+            </li>
+            <li class="header-item">
+              <a href="./portfolio.html" class="link current">Портфолио</a>
+            </li>
+            <li class="header-item"><a href="" class="link">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header-connect">
+          <ul class="contact-info">
+            <li class="header-item">
+              <a href="mailto:info@devstudio.com" class="contact-mail"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="header-item">
+              <a href="tel:+380961111111" class="phone">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
+
+    
  
 <main>
   <section class="projects">
     <div class="container">
-  <h1>Наши проекты</h1>
+  <h1 class="visually-hidden">Наши проекты</h1>
  
 <!--Фильтр-->
     <ul class="portfolio-buttons">
-      <li><button type="button" class="btn-portfolio">Все</button></li>
-      <li><button type="button" class="btn-portfolio">Веб-сайты</button></li>
-      <li><button type="button" class="btn-portfolio">Приложения</button></li>
-      <li><button type="button" class="btn-portfolio">Дизайн</button></li>
-      <li><button type="button" class="btn-portfolio">Маркетинг</button></li>
+      <div class="container buttons-container">
+      <li class="btn-li"><button type="button" class="btn-portfolio">Все</button></li>
+      <li class="btn-li"><button type="button" class="btn-portfolio">Веб-сайты</button></li>
+      <li class="btn-li"><button type="button" class="btn-portfolio">Приложения</button></li>
+      <li class="btn-li"><button type="button" class="btn-portfolio">Дизайн</button></li>
+      <li class="btn-li"><button type="button" class="btn-portfolio">Маркетинг</button></li>
+    </div>
     </ul>
 </div>
   <!--Проекты-->
-<div class="container">
+
 <ul class="projects">
+  <div class="container projects-container">
   <li>
     <img src="imgs/img21.jpg" 
     alt="Технокряк" 
@@ -125,8 +140,9 @@
     <h2 class="projects-title">Growing Business</h2>
     <p class="text">Приложение</p>
 </li>
-</ul>
+
 </div>
+</ul>
 </section>
 </main>
 <!--Футер-->

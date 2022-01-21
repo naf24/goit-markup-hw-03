@@ -60,10 +60,18 @@ body {
   display: flex;
   align-items: center;
 }
+
 .header-connect {
   margin-left: auto;
 }
+
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
+  margin-right: 93px;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -85,11 +93,8 @@ link:focus {
 li {
   list-style-type: none;
 }
-.site-nav {
-  display: flex;
-  align-items: center;
-}
-.site-nav a {
+
+.header-nav a {
   color: var(--title-text-color);
   text-decoration: none;
   margin-right: 50px;
@@ -101,11 +106,11 @@ li {
 
   color: var(--title-text-color);
 }
-.site-nav :hover,
-.site-nav :focus {
+.header-nav :hover,
+.header-nav :focus {
   color: var(--accent-color);
 }
-.site-nav .link.current {
+.header-nav .link.current {
   color: var(--accent-color);
 }
 .contact-info a {
@@ -115,12 +120,16 @@ li {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  margin-right: 50px;
 }
 .contact-info.contact-mail {
   color: var(--accent-color);
 }
-
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+.phone {
+  margin-left: 50px;
+}
 /* Кнопка */
 
 .btn {
@@ -177,6 +186,9 @@ li {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.features-container {
+  display: flex;
+}
 .text {
   color: var(--primary-text-color);
 
@@ -195,6 +207,12 @@ li {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.services-list {
+  display: flex;
 }
 .services-list li {
   width: 33.3%;
@@ -205,6 +223,7 @@ li {
   background-color: var(--backround-middle);
   margin-bottom: var(--base-margin);
 }
+
 .hero-title {
   color: var(--title-text-color);
   font-family: inherit;
@@ -212,12 +231,18 @@ li {
   font-size: 36px;
   line-height: 1.67;
   text-align: center;
+  margin-bottom: 50px;
 }
+.hero-container {
+  display: flex;
+}
+
 .hero-list {
   border: 1px solid #2196f3;
 }
-.hero-list li {
-  width: 25%;
+
+.hero-item {
+  margin-right: 30px;
 }
 .hero-name {
   color: var(--title-text-color);
@@ -273,10 +298,10 @@ li {
 .portfolio-buttons {
   cursor: pointer;
   background-color: var(--backround-middle);
-
+  margin-left: 0;
   color: var(--white);
 
-  border: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 
   font-family: inherit;
   font-weight: bold;
@@ -285,6 +310,15 @@ li {
 
   text-align: center;
   letter-spacing: 0.06em;
+  margin-bottom: 34px;
+}
+
+.buttons-container {
+  display: flex;
+}
+.btn-li {
+  color: #757575;
+  margin: 0 auto;
 }
 
 .btn-portfolio {
@@ -295,7 +329,6 @@ li {
   padding-top: 6px;
   padding-bottom: 6px;
   margin-bottom: var(--base-margin);
-  margin-right: 8px;
 
   min-width: 70px;
   margin: 0;
@@ -315,11 +348,16 @@ li {
 /* Проекты */
 .projects {
   padding-bottom: 94px;
-  border: 1px solid #2196f3;
+  border-bottom: 1px solid #2196f3;
   margin-right: var(--middle-margin);
 }
-.projects li {
-  width: 33.3%;
+.projects-container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.projects li-wrap {
+  display: flex;
 }
 .projects-title {
   color: #212121;
