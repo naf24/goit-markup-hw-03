@@ -321,16 +321,16 @@ li {
   margin-bottom: var(--base-margin);
 }
 /* Фильтр */
+
 .portfolio-buttons {
   padding-top: 94px;
   padding-bottom: 94px;
   margin: 0;
-  
 }
+.buttons-container{
+  text-align: center;
 }
-.buttons-container {
-  display: flex;
-}
+
 .portfolio-buttons ul {
   list-style-type: none;
 
