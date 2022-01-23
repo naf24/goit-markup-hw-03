@@ -32,7 +32,12 @@ body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
 }
+/*Утилиты*/
+
+
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 .link {
@@ -59,6 +64,7 @@ body {
 .header-container {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .header-connect {
@@ -85,6 +91,10 @@ body {
 }
 .link {
   color: var(--title-text-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-weight: 500px;
+  line-height: 1.2;
 }
 link:hover,
 link:focus {
@@ -118,11 +128,17 @@ li {
 
 .contact-info a {
   color: var(--primary-text-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+}
+.contact-info {
+  display: flex;
+  margin-left: auto;
 }
 .contact-info.contact-mail {
   color: var(--accent-color);
@@ -243,7 +259,7 @@ overlay {
 }
 
 .services-list {
-  display: flex;
+  display: inline-block;
 }
 .services-list li {
   width: 33.3%;
@@ -268,6 +284,14 @@ overlay {
 }
 .hero-container {
   display: flex;
+  margin 0;
+  align-items center;
+  align-content center;
+  align-content flex-start;
+  justify-content flex-start;
+  justify-content space-between;
+  justify-content space-around;
+  justify-content space-evenly;
 }
 
 .hero-list {
@@ -275,7 +299,7 @@ overlay {
 }
 
 .hero-item {
-  margin-right: 30px;
+  margin-right 30px;
 }
 .hero-text {
   padding: 30px 30px 30px 30px;
@@ -344,11 +368,7 @@ overlay {
 /* Портфолио */
 
 /* Фильтр */
-
-.projects-portfolio {
-}
 .project-buttons {
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 .buttons-container {
@@ -404,8 +424,11 @@ overlay {
 .container-projects {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 300px;
 }
-
+.projects-item {
+  width: 370px;
+}
 .inborder:not(:nth-child(3n)) {
   margin-right: 30px;
 }
@@ -414,16 +437,11 @@ overlay {
   margin-bottom: 30px;
 }
 
-.projects {
-  padding-bottom: 94px;
-}
-
 .project-buttons .btn-portfolio:hover,
 :focus {
   background-color: var(--accent-color);
 }
-.inborder {
-}
+
 .projects-title {
   font-family: inherit;
   font-style: normal;
@@ -432,14 +450,13 @@ overlay {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin-left: 24px;
 }
 .name {
   font-size: 16px;
   line-height: 1.7;
-  /* identical to box height, or 187% */
-
+  margin-left: 24px;
   letter-spacing: 0.03em;
-
   color: #757575;
 }
 
