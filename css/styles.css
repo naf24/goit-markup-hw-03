@@ -421,6 +421,8 @@ li {
 }
 
 /* Проекты */
+
+
 .projects-list {
   display: flex;
   justify-content: center;
@@ -466,10 +468,23 @@ li {
   
 }
 .projects-item img {
+  padding: 0;
   margin-bottom: 20px;
 }
 .portfolio-description {
   padding: 20px 24px 20px 24px;
+}
+.projects-title {
+  padding: ;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+.portfolio-description .name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
 }
 .visually-hidden {
   position: absolute;
