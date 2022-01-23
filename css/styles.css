@@ -435,7 +435,7 @@ overlay {
 .container-projects {
   display: flex;
   flex-wrap: wrap;
-  margin-left 300px;
+ 
 }
 .container-element {
   width:calc( (100% - 60px) /3);
