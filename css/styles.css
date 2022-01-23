@@ -244,6 +244,9 @@ overlay {
 }
 
 /* Услуги */
+::after, ::before {
+  box-sizing: border-box;
+}
 .section {
 }
 
@@ -420,20 +423,30 @@ overlay {
 }
 
 /* Проекты */
+.cover-container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
 
 .container-projects {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 300px;
+  margin-left 300px;
 }
-.projects-item {
-  width: 370px;
-}
-.inborder:not(:nth-child(3n)) {
+.container-element {
+  width:calc( (100% - 60px) /3);
   margin-right: 30px;
+  margin-bottom: 30px;
+  
 }
-
-.inborder:not(:nth-last-child(-n + 3)) {
+.container-element:nth-child(3n) {
+  margin-right: 0;
+}
+.container-element:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
 
@@ -452,6 +465,10 @@ overlay {
   color: var(--title-text-color);
   margin-left: 24px;
 }
+.projects-item .img {
+  background-color: var(--backround-middle);
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+}
 .name {
   font-size: 16px;
   line-height: 1.7;
@@ -460,8 +477,9 @@ overlay {
   color: #757575;
 }
 
-.projects-item {
-  border: 2px solid rgba(0, 0, 0, 0.3);
+.container-element {
+  border: 1px solid #EEEEEE;
+  
 }
 .visually-hidden {
   position: absolute;
