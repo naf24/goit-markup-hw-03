@@ -192,7 +192,7 @@ li {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-overlay {
+.overlay {
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -214,7 +214,6 @@ overlay {
 
 .features-title {
   color: var(--title-text-color);
-
   font-weight: bold;
   font-size: 14px;
   line-height: 1.1;
@@ -236,37 +235,36 @@ overlay {
   margin-top: 10px;
   margin-right: 30px;
   margin-left: 0;
+
+
 }
 .text {
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.7;
-}
 
+}
 /* Услуги */
-::after, ::before {
-  box-sizing: border-box;
-}
-.section {
+.list-container {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
 }
 
+.list-container:not(:last-child){
+  margin-right: 30px;
+}
 .section-title {
   color: var(--title-text-color);
-
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
-
   margin-bottom: 50px;
 }
 
-.services-list {
-  display: inline-block;
-}
-.services-list li {
-  width: 33.3%;
-}
+
+
 /* Команда */
 
 .hero-section {
@@ -296,7 +294,9 @@ overlay {
   justify-content space-around;
   justify-content space-evenly;
 }
-
+.hero-container:not(:last-child){
+  margin-right: 30px;
+}
 .hero-list {
   border: 1px solid #2196f3;
 }
