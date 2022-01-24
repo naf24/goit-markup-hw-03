@@ -58,13 +58,15 @@ body {
 /* Шапка */
 .page-header {
   background-color: var(--white);
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 32px;
+  padding-bottom: 0;
+  border: 1px solid #ECECEC;
 }
 .header-container {
   display: flex;
   align-items: center;
   margin-left: auto;
+  margin-bottom: 32px;
 }
 
 .header-connect {
@@ -206,6 +208,7 @@ li {
   outline: 1px solid var(--title-text-color);
 }
 
+
 /* Преимущества */
 
 .features-title {
@@ -242,6 +245,7 @@ li {
 
 }
 /* Услуги */
+
 .list-container {
   display: flex;
   padding: 0;
@@ -266,7 +270,7 @@ li {
 /* Команда */
 
 .hero-section {
-  background-color: var(--backround-middle);
+  background-color: var(--background-color);
   margin-bottom: var(--base-margin);
   padding-top: 94px;
   padding-bottom: 94px;
@@ -308,6 +312,7 @@ li {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+  margin-bottom: 10px;
 }
 .position {
   font-family: Roboto;
@@ -365,7 +370,14 @@ li {
 .footer-contact:hover,:focus{
   text-decoration: underline;
 }
+
 /* Портфолио */
+.page-header .second {
+  width: 1600px;
+  position: absolute;
+  margin-bottom: 100;
+  border-bottom: 1px solid #ECECEC;
+}
 
 /* Фильтр */
 .project-buttons {
@@ -392,11 +404,9 @@ li {
 
   text-align: center;
 
-  margin-right: 8px;
-
   background: #f5f4fa;
   letter-spacing: 0.03em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
   border-radius: 4px;
 }
 .btn-portfolio:hover,
@@ -418,8 +428,14 @@ li {
   background-color: var(--background-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  
 }
-
+.button-item {
+  margin-right: 8px;
+}
+.button-item:not(:last-child){
+  margin-right: 8px;
+}
 /* Проекты */
 
 
@@ -433,14 +449,14 @@ li {
   width:calc( (100% - 60px) /3);
   margin-right: 30px;
   margin-bottom: 30px;
-  
 }
 .projects-item:nth-child(3n) {
-  margin-right: 0;
+  margin-right: 0px;
 }
-.projects-item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
+.projects-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
+
 
 .projects-title {
   font-family: inherit;
@@ -469,13 +485,11 @@ li {
 }
 .projects-item img {
   padding: 0;
-  margin-bottom: 20px;
 }
 .portfolio-description {
   padding: 20px 24px 20px 24px;
 }
 .projects-title {
-  padding: ;
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
