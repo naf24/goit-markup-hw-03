@@ -323,7 +323,9 @@ li {
   letter-spacing: 0.03em;
   text-align: center;
 }
-
+.hero-item {
+  background-color: var(--white);
+}
 /* Футер */
 
 .footer-body {
